@@ -1,6 +1,6 @@
 function Button () {
     return (
-        <Button>Submit</Button>
+       <button>Submit</button>
     )
     
 } export default Button;

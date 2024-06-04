@@ -1,31 +1,47 @@
-import Input from "../common"
-import Button from "../common"
+import Input from "../common/Input"
+import Button from "../common/Button"
 
 function Signup() {
 
     var ComponentName = "Sign Up"
     return (
-        <div>
-        <div>
-            Full Name
-            <Input />
+        <div style={{
+            width:"400px",
+            margin: "20px",
+            padding: "10px",
+            backgroundColor: "aqua",
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+            alignItems: "center"
+        }}>
+            <h1>{ComponentName}</h1>
+            <div>
+                Full Name :
+                <br />
+                <Input />
+            </div>
+            <div>
+                Email :
+                <br />
+                <Input />
+            </div>
+            <div>
+                User Name :
+                <br />
+                <Input />
+            </div>
+            <div>
+                Password
+                <br />
+                <Input />
+            </div>
+            <div>
+                <br />
+                <Button />
+            </div>
         </div>
-        <div>
-        Email
-        <Input />
-    </div>
-    <div>
-            User Name
-            <Input />
-        </div>
-        <div>
-            Password
-            <Input />
-        </div>
-        <div>
-            Submit
-            <Button />
-        </div>
-    </div>
     )
 }
+
+export default Signup;

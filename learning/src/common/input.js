@@ -1,6 +1,6 @@
 function Input() {
     return (
-        <Input></Input>
+        <input />
     )
 }
 export default Input;
