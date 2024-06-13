@@ -2,6 +2,13 @@ import { useState } from "react"
 
 function Counter() {
     var [count, setCount] = useState("0")
+
+    function addCount(event) {
+    
+        var value = event.target.value;
+        setCount(value)
+        }
+
     return (
         <div style={{
             height: "250px",
@@ -14,9 +21,10 @@ function Counter() {
             alignItems: "center"
 
         }}>
+            
             <h1>{count}</h1>
             <button
-                onClick={function () { setCount(count++) }}
+                onClick={function(event){addCount(event)}}
                 style={{
                     Padding: "10px",
                     width: "100px",

@@ -2,7 +2,6 @@
 // import Button from "../common/button";
 import {useStates} from "react";
 
-
 function Login() {
     var componentName = "Login";
     var [username, setUsername] = useStates("")
